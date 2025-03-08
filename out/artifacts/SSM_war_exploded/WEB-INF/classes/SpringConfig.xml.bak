@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xmlns:context="http://www.springframework.org/schema/context"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--    ①快速开始,定义bean-->
+<!--    <bean id="userbean" class="com.itheima.Dao.Impl.UserDaoImpl"/>-->
+
+
+
+<!--    别名-->
+<!--    <bean id="userbean1" name="userDao2 userDao3 userDao4" class="com.itheima.Dao.Impl.UserDaoImpl"/>-->
+
+
+
+<!--    作用范围-->
+<!--    <bean id="u" class="com.itheima.Dao.Impl.UserDaoImpl" scope="singleton"/>-->
+
+
+
+<!--    导入properties文件-->
+<!--    <bean id="s" class="com.itheima.Dao.Impl.UserDaoImpl">-->
+<!--        <context:property-placeholder location="jdbc.properties"/>-->
+<!--    </bean>-->
+
+
+<!--    依赖注入-->
+<!--    setter注入-->
+<!--    <bean id="UserBean" class="com.itheima.Dao.Impl.UserDaoImpl"/>-->
+<!--    <bean id="w" class="com.itheima.Dao.Impl.WorkDaoImpl">-->
+<!--        <property name="userDao" ref="UserBean"/>-->
+<!--        <property name="placeholder" value="hello world"/>-->
+<!--    </bean>-->
+<!--        构造器注入-->
+<!--    <bean id="UserBean" class="com.itheima.Dao.Impl.UserDaoImpl"/>-->
+<!--    <bean id="w" class="com.itheima.Dao.Impl.WorkDaoImpl">-->
+<!--        <constructor-arg name="userDao" ref="UserBean"/>-->
+<!--        <constructor-arg name="placeholder" value="hello world"/>-->
+<!--    </bean>-->
+
+<!--    autowire自动装配，不写就按自动实现-->
+<!--    <bean id="userBean" class="com.itheima.Dao.Impl.UserDaoImpl"/>-->
+<!--    <bean id="w" class="com.itheima.Dao.Impl.WorkDaoImpl" autowire="byType"/>-->
+
+
+
+<!--    管理第三方-->
+<!--    <bean id="aliDruid" class="com.alibaba.druid.pool.DruidDataSource">-->
+<!--        <context:property-placeholder location="jdbc.properties"/>-->
+<!--        <property name="driverClassName" value="${}"/>-->
+<!--        <property name="url" value="${}"/>-->
+<!--        <property name="username" value="${}"/>-->
+<!--        <property name="password" value="${}"/>-->
+<!--    </bean>-->
+
+
+</beans>
